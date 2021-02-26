@@ -10,7 +10,7 @@ Consider what the tiles have in common and what they do not:
 
 function PotionTile({potion, addOrSell, children}) {
   return (
-    <div className="card">
+    <div className={className}>
       <div onClick={() => addOrSell(potion.id)} className="image-wrapper">
         <img className="image" alt={potion.name} src={potion.image_url} />
       </div>
